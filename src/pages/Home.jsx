@@ -39,7 +39,7 @@ const slides = [
         tag: 'Software Development',
         title: 'Custom Software.\nReal Results.',
         sub: 'We build enterprise-grade web applications, ERP systems, and APIs tailored exactly to your business requirements.',
-        cta1: { label: 'View Projects', to: '/services/software-development' },
+        cta1: { label: 'Our servicesjects', to: '/services/software-development' },
         cta2: { label: 'Contact Us', to: '/contact' },
     },
     {
@@ -49,7 +49,7 @@ const slides = [
         title: 'The Right People\nFor Your IT Needs',
         sub: 'Skilled IT professionals, data entry operators, and support engineers — deployed on-site or remotely for your business.',
         cta1: { label: 'Our Services', to: '/services' },
-        cta2: { label: 'Talk to Experts', to: '/contact' },
+        cta2: { label: 'Contact US', to: '/contact' },
     },
 ];
 

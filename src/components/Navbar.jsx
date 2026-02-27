@@ -109,7 +109,7 @@ export default function Navbar() {
                                 <FiPhone /> +91 78609 98904
                             </a>
                             <Link to="/contact" className="btn btn-accent">
-                                Get Free Quote
+                                Contact US
                             </Link>
                         </div>
                     </div>
