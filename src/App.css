@@ -1,0 +1,4 @@
+/* Give main content padding for fixed header (topbar + navbar) */
+main {
+  min-height: 100vh;
+}

@@ -1,0 +1,108 @@
+/* ===== CAREER HERO ===== */
+.career-hero {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    padding: 140px 0 80px;
+    /* Job interview / hiring / team onboarding */
+    background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.career-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(12, 26, 48, 0.88) 0%, rgba(8, 72, 110, 0.78) 100%);
+}
+
+.career-hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.career-hero__content h1 {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 18px;
+    line-height: 1.2;
+}
+
+.career-hero__content p {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 560px;
+    line-height: 1.75;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 22px;
+}
+
+.breadcrumb a {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumb a:hover { color: #fff; }
+.breadcrumb .current { color: rgba(255, 255, 255, 0.9); }
+
+/* ===== JOB OPENINGS ===== */
+.career-openings {
+    max-width: 860px;
+    margin: 80px auto;
+    padding: 64px 5%;
+    text-align: center;
+}
+
+.career-openings h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+}
+
+.career-openings p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 34px;
+    line-height: 1.7;
+}
+
+.career-openings strong {
+    color: var(--primary);
+}
+
+.career-apply-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 14px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 18px rgba(245, 158, 11, 0.35);
+    letter-spacing: 0.3px;
+}
+
+.career-apply-btn:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(245, 158, 11, 0.45);
+}

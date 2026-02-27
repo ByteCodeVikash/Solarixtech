@@ -1,0 +1,193 @@
+/* ===== SOLUTIONS HERO BG ===== */
+.solutions-page .page-hero {
+    /* Data analytics / business intelligence dashboard */
+    background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80');
+}
+
+/* ===== HERO SEARCH ===== */
+.hero-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 12px 22px;
+    border-radius: 50px;
+    max-width: 460px;
+    margin: 28px auto 0;
+    color: white;
+    transition: var(--transition);
+}
+
+.hero-search:focus-within {
+    border-color: rgba(245,158,11,0.5);
+    background: rgba(255,255,255,0.15);
+}
+
+.hero-search input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 0.95rem;
+    flex: 1;
+    font-family: var(--font-body);
+}
+
+.hero-search input::placeholder { color: rgba(255,255,255,0.55); }
+.hero-search svg { font-size: 1.1rem; opacity: 0.65; }
+
+/* ===== ACCORDION ===== */
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.accordion-item {
+    overflow: hidden;
+    border-left: 3px solid transparent;
+    transition: var(--transition);
+}
+
+.accordion-item--open {
+    border-left-color: var(--primary-light);
+    box-shadow: 0 8px 32px rgba(30,64,175,0.12);
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.accordion-header:hover {
+    background: rgba(30,64,175,0.03);
+}
+
+.accordion-item--open .accordion-header {
+    background: linear-gradient(90deg, rgba(30,64,175,0.05) 0%, transparent 100%);
+}
+
+.accordion-header svg {
+    min-width: 20px;
+    color: var(--primary-light);
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item--open .accordion-header svg {
+    color: var(--primary);
+}
+
+.accordion-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+}
+
+.accordion-icon { font-size: 1.8rem; }
+
+.accordion-cat {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-light);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.accordion-title h3 {
+    margin-top: 3px;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+/* Accordion Body */
+.accordion-body {
+    border-top: 1px solid var(--border-light);
+}
+
+.accordion-body-inner {
+    padding: 26px;
+    background: var(--bg-subtle);
+}
+
+.accordion-body-inner p {
+    color: var(--text-muted);
+    margin-bottom: 18px;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.benefit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.benefit-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.92rem;
+    color: var(--text-body);
+}
+
+.check {
+    color: var(--primary-light);
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+/* ===== CASE STUDY CARDS ===== */
+.case-card {
+    padding: 28px;
+    border-top: 3px solid var(--primary-light);
+    transition: var(--transition);
+}
+
+.case-card:hover {
+    border-top-color: var(--primary);
+}
+
+.case-card__industry {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--primary-light);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.case-card h3 {
+    font-size: 1.08rem;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.case-card__result {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+    color: white;
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.case-card p {
+    font-size: 0.87rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+}

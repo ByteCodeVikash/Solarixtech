@@ -1,0 +1,117 @@
+/* ===== CONTACT HERO BG ===== */
+.contact-page .page-hero {
+    /* Customer support / helpdesk with headset */
+    background-image: url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?w=1600&q=80');
+}
+
+/* ===== CONTACT LAYOUT ===== */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 44px;
+    align-items: start;
+}
+
+.contact-form-card {
+    padding: 38px;
+}
+
+.contact-form-card h2 {
+    margin-bottom: 8px;
+    font-size: 1.7rem;
+}
+
+.contact-form-card > p {
+    color: var(--text-muted);
+    margin-bottom: 28px;
+    font-size: 0.97rem;
+}
+
+/* ===== INFO BOX ===== */
+.info-box {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.info-box h3 {
+    font-size: 1.15rem;
+    margin-bottom: 22px;
+    color: var(--text-dark);
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+}
+
+.info-box h3::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; left: 0;
+    width: 32px; height: 2px;
+    background: var(--primary-light);
+    border-radius: 1px;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.info-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.info-icon.blue  { background: rgba(30,64,175,0.1); color: var(--primary); }
+.info-icon.teal  { background: rgba(8,145,178,0.1); color: var(--teal); }
+.info-icon.orange { background: rgba(245,158,11,0.12); color: var(--accent-dark); }
+.info-icon.green  { background: rgba(5,150,105,0.1); color: #059669; }
+
+.info-list li div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.info-list strong {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.info-list span,
+.info-list a {
+    font-size: 0.93rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.info-list a:hover { color: var(--primary); }
+
+/* Map */
+.map-box {
+    overflow: hidden;
+    padding: 0;
+    border-radius: var(--radius);
+}
+
+@media (max-width: 900px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}

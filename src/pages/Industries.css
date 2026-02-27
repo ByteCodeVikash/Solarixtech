@@ -1,0 +1,179 @@
+/* ===== INDUSTRIES HERO BG ===== */
+.industries-page .page-hero {
+    /* Business meeting / corporate professionals across sectors */
+    background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80');
+}
+
+/* ===== INDUSTRIES STATS BAR ===== */
+.industries-stats {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--teal-dark) 100%);
+    padding: 36px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.industries-stats::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 50%, rgba(245,158,11,0.1) 0%, transparent 60%);
+}
+
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.stat-box {
+    padding: 20px;
+    position: relative;
+}
+
+.stat-box:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 20%; bottom: 20%;
+    width: 1px;
+    background: rgba(255,255,255,0.2);
+}
+
+.stat-box strong {
+    display: block;
+    font-size: 2.2rem;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    color: white;
+    line-height: 1;
+}
+
+.stat-box span {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.75);
+    font-weight: 500;
+    margin-top: 4px;
+    display: block;
+}
+
+/* ===== INDUSTRY CARDS ===== */
+.ind-card {
+    padding: 32px 22px;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.ind-card:hover {
+    border-bottom-color: var(--primary-light);
+}
+
+.ind-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(30,64,175,0.04), rgba(8,145,178,0.04));
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.ind-card:hover::before { opacity: 1; }
+
+.ind-icon {
+    font-size: 2.8rem;
+    margin-bottom: 14px;
+    display: block;
+    transition: var(--transition);
+}
+
+.ind-card:hover .ind-icon {
+    transform: scale(1.18) rotate(-5deg);
+}
+
+.ind-card h3 {
+    font-size: 1.02rem;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.ind-desc {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+}
+
+/* ===== INDUSTRIES CTA ===== */
+.ind-cta {
+    background: linear-gradient(135deg, var(--navy), var(--primary-dark));
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ind-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(245,158,11,0.08) 0%, transparent 60%);
+}
+
+.ind-cta h2 {
+    color: white;
+    margin-bottom: 14px;
+    position: relative; z-index: 1;
+}
+
+.ind-cta p {
+    color: rgba(255,255,255,0.7);
+    max-width: 540px;
+    margin: 0 auto 30px;
+    position: relative; z-index: 1;
+}
+
+/* Social Buttons */
+.social-row {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 26px;
+    position: relative; z-index: 1;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: white;
+    transition: var(--transition);
+    text-decoration: none;
+    letter-spacing: 0.3px;
+}
+
+.social-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+.social-btn.facebook { background: #1877F2; }
+.social-btn.twitter { background: #1DA1F2; }
+.social-btn.linkedin { background: #0A66C2; }
+.social-btn.instagram {
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .stat-box:nth-child(2)::after { display: none; }
+}
