@@ -873,11 +873,11 @@
     }
 
     .slider-content {
-        padding-top: 80px;
+        padding-top: 70px;
+        padding-bottom: 70px;
         padding-left: 5% !important;
         padding-right: 5%;
-        padding-bottom: 8px;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .slide-text {
@@ -985,10 +985,11 @@
     }
 
     .slider-content {
-        padding-top: 72px;
+        padding-top: 65px;
+        padding-bottom: 65px;
         padding-left: 4% !important;
         padding-right: 4%;
-        padding-bottom: 6px;
+        align-items: center;
     }
 
     .slide-text h1 {
